@@ -45,6 +45,18 @@ body{
  
 }
 
+.balls{
+    fill: none;
+    stroke-linecap: round;
+    stroke: #F3D146;
+    position: absolute;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 0 20px;
+    stroke-width: 12px;
+    top: 50%;
+    animation: ballsAnimation 0.9s linear infinite;
+}
+
 
 @keyframes openMouth{
    0%, 100%{
@@ -56,4 +68,11 @@ body{
 
    }}
 
-
+@keyframes ballsAnimation{
+    0%{
+        stroke-dashoffset: 0;
+    }
+    100%{
+        stroke-dashoffset: 50px;
+    }
+}
