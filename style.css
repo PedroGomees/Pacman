@@ -1,0 +1,59 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+    background-color: #333;
+}
+
+.Container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+      box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+      overflow: hidden;
+    background: #232525;
+    color: #333;
+  
+}
+.Centralize{
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    translate: (50%,-50%);
+}
+
+.pacman{
+    position: absolute;
+    fill: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  transform: translate(-50%, -50%);
+  stroke:#F3D146;
+  stroke-width:50px;
+  stroke-dashoffset:0;
+  stroke-dasharray: 160px;
+  animation: openMouth 0.9s ease-in-out infinite;
+  
+ 
+}
+
+
+@keyframes openMouth{
+   0%, 100%{
+    stroke-dashoffset: 0;
+   transform: translate(-50%,-50%) rotate(0deg);}
+   50%{
+    stroke-dashoffset: 20;
+    trasnform: translate(-50%,-50%) rotate(45deg) ;
+
+   }}
+
+
